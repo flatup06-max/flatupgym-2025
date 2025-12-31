@@ -83,8 +83,8 @@ export default function Hero() {
           variants={itemVariants}
           className="mb-6 inline-block"
         >
-          <div className="px-4 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full">
-            <p className="text-sm font-semibold text-white">
+          <div className="px-6 py-3 bg-[#FF006E] border-4 border-white rounded-none transform -rotate-2 shadow-xl">
+            <p className="text-sm font-black text-white tracking-wider">
               🌟 女性オーナーの安心できる格闘技ジム
             </p>
           </div>
@@ -93,27 +93,26 @@ export default function Hero() {
         {/* Main Heading */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 max-w-5xl text-white drop-shadow-lg"
+          className="text-6xl md:text-8xl lg:text-9xl font-black leading-none mb-6 max-w-5xl text-white drop-shadow-2xl tracking-tight"
+          style={{ fontFamily: '"Noto Sans JP", sans-serif', fontWeight: 900 }}
         >
-          <span className="gradient-text">
-            私を強くする、
+          <span className="gradient-text block">
+            世界で一番
           </span>
           <br />
-          <span className="text-white">
-            女性オーナーの
-            <br />
-            安心できる場所。
+          <span className="text-white block">
+            優しい格闘技ジム
           </span>
         </motion.h1>
 
         {/* Subheading */}
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-2xl text-white/90 max-w-3xl mb-8 leading-relaxed drop-shadow-md"
+          className="text-xl md:text-3xl text-white/95 max-w-4xl mb-8 leading-relaxed drop-shadow-lg font-bold"
         >
-          女性トレーナーが一寸一寸を大切に。女性専用クラス、子連れ参加OK、産後ダイエットを実績。
+          女性オーナーだからこそできる、
           <br />
-          <span className="font-semibold text-[#FF9A9E]">女性が一番輝ける、安心で楽しい場所。</span>
+          <span className="text-[#FF9A9E] block">女性が安心して通えるジム。</span>
         </motion.p>
 
         {/* Glowing Accent Line */}

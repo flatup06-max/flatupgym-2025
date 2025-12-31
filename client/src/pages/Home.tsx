@@ -1,8 +1,8 @@
 import Hero from '@/components/Hero';
-import OwnerStory from '@/components/OwnerStory';
-import WomensEmpowerment from '@/components/WomensEmpowerment';
-import PricingPlans from '@/components/PricingPlans';
-import CustomerVoices from '@/components/CustomerVoices';
+import OwnerStorySakuma from '@/components/OwnerStorySakuma';
+import WomensEmpowermentSakuma from '@/components/WomensEmpowermentSakuma';
+import PricingPlansSakuma from '@/components/PricingPlansSakuma';
+import CustomerVoicesSakuma from '@/components/CustomerVoicesSakuma';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FixedFooterButtons from '@/components/FixedFooterButtons';
@@ -26,10 +26,10 @@ export default function Home() {
       {/* Main Content */}
       <main>
         <Hero />
-        <OwnerStory />
-        <WomensEmpowerment />
-        <PricingPlans />
-        <CustomerVoices />
+        <OwnerStorySakuma />
+        <WomensEmpowermentSakuma />
+        <PricingPlansSakuma />
+        <CustomerVoicesSakuma />
         <FAQ />
       </main>
 
