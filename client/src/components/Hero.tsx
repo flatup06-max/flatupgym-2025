@@ -1,0 +1,160 @@
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+
+/**
+ * Hero Component - Empathetic Dynamism
+ * 
+ * Design Philosophy:
+ * - Overwhelming visual impact with gradient background
+ * - Large, bold typography that conveys strength and accessibility
+ * - Smooth animations that guide user attention
+ * - Clear CTA buttons for LINE consultation and trial
+ */
+
+export default function Hero() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.8 },
+    },
+  };
+
+  const glowVariants = {
+    animate: {
+      boxShadow: [
+        '0 0 20px rgba(255, 0, 110, 0.3)',
+        '0 0 40px rgba(255, 0, 110, 0.5)',
+        '0 0 20px rgba(255, 0, 110, 0.3)',
+      ],
+      transition: { duration: 3, repeat: Infinity },
+    },
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#FAFAF8] via-[#F5E6F0] to-[#E6F5FF]">
+      {/* Animated Background Elements */}
+      <motion.div
+        className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-[#FF006E] to-[#FF9A9E] rounded-full opacity-20 blur-3xl"
+        animate={{
+          y: [0, 30, 0],
+          x: [0, 20, 0],
+        }}
+        transition={{ duration: 8, repeat: Infinity }}
+      />
+      <motion.div
+        className="absolute bottom-10 right-10 w-96 h-96 bg-gradient-to-r from-[#00D9FF] to-[#00B8E6] rounded-full opacity-20 blur-3xl"
+        animate={{
+          y: [0, -30, 0],
+          x: [0, -20, 0],
+        }}
+        transition={{ duration: 10, repeat: Infinity, delay: 1 }}
+      />
+
+      {/* Main Content */}
+      <motion.div
+        className="container relative z-10 flex flex-col items-center justify-center text-center"
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        {/* Badge */}
+        <motion.div
+          variants={itemVariants}
+          className="mb-6 inline-block"
+        >
+          <div className="px-4 py-2 bg-gradient-to-r from-[#FF006E]/10 to-[#00D9FF]/10 border border-[#FF006E]/20 rounded-full">
+            <p className="text-sm font-semibold text-[#FF006E]">
+              🌟 世界一初心者に優しい格闘技ジム
+            </p>
+          </div>
+        </motion.div>
+
+        {/* Main Heading */}
+        <motion.h1
+          variants={itemVariants}
+          className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 max-w-5xl"
+        >
+          <span className="gradient-text">
+            私を強くする、
+          </span>
+          <br />
+          <span className="text-[#1A1F3A]">
+            優しい場所。
+          </span>
+        </motion.h1>
+
+        {/* Subheading */}
+        <motion.p
+          variants={itemVariants}
+          className="text-lg md:text-2xl text-[#666666] max-w-3xl mb-8 leading-relaxed"
+        >
+          初心者・女性・子どもが一番輝ける、最も安心で、最も楽しく、最も強くなれる格闘技ジム。
+          <br />
+          <span className="font-semibold text-[#FF006E]">人生を変えたい人の最初の一歩を守り抜く場所。</span>
+        </motion.p>
+
+        {/* Glowing Accent Line */}
+        <motion.div
+          className="w-32 h-1 glow-accent-line mx-auto mb-12"
+          animate="animate"
+          variants={glowVariants}
+        />
+
+        {/* CTA Buttons */}
+        <motion.div
+          variants={itemVariants}
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 w-full"
+        >
+          <a href="https://liff.line.me/2008276179-XxwM2QQD" target="_blank" rel="noopener noreferrer">
+            <Button className="btn-cta text-lg px-10 py-6">
+              💬 LINEで体験・相談
+            </Button>
+          </a>
+          <Button
+            variant="outline"
+            className="px-10 py-6 text-lg border-2 border-[#FF006E] text-[#FF006E] hover:bg-[#FF006E]/5 font-semibold"
+          >
+            📞 電話で予約
+          </Button>
+        </motion.div>
+
+        {/* Trust Indicator */}
+        <motion.div
+          variants={itemVariants}
+          className="text-sm text-[#666666]"
+        >
+          <p className="mb-2">✨ 30秒で予約完了！見学だけでも大歓迎</p>
+          <p className="text-xs">LINE友だち 1,221人突破 | Google口コミ 高評価30件</p>
+        </motion.div>
+      </motion.div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        <div className="w-6 h-10 border-2 border-[#FF006E] rounded-full flex justify-center">
+          <motion.div
+            className="w-1 h-2 bg-[#FF006E] rounded-full mt-2"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+          />
+        </div>
+      </motion.div>
+    </section>
+  );
+}
