@@ -49,8 +49,8 @@ export default function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://ik.imagekit.io/FLATUPGYM/batch_IMG_9600.JPG?updatedAt=1756928169552)',
-          filter: 'brightness(0.5) contrast(1.1)',
+          backgroundImage: 'url(https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2013.55.35.png?updatedAt=1738041347828)',
+          filter: 'brightness(0.6) contrast(1.2)',
         }}
       />
       {/* Animated Background Elements */}

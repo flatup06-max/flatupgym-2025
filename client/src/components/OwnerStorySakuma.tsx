@@ -52,7 +52,7 @@ export default function OwnerStorySakuma() {
           >
             <div className="relative z-10 rounded-none overflow-hidden shadow-2xl border-8 border-[#FF006E] transform -rotate-3">
               <img
-                src="/images/owner-story-bg.jpg"
+                src="https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2014.03.22.png?"
                 alt="オーナーあいか - 産後−25kg成功"
                 className="w-full h-auto object-cover"
               />
