@@ -1,7 +1,7 @@
 import Hero from '@/components/Hero';
 import OwnerStorySakuma from '@/components/OwnerStorySakuma';
 import WomensEmpowermentSakumaV2 from '@/components/WomensEmpowermentSakumaV2';
-import PricingPlansSakuma from '@/components/PricingPlansSakuma';
+import PricingPlansV2 from '@/components/PricingPlansV2';
 import CustomerVoicesSakuma from '@/components/CustomerVoicesSakuma';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -28,7 +28,7 @@ export default function Home() {
         <Hero />
         <OwnerStorySakuma />
         <WomensEmpowermentSakumaV2 />
-        <PricingPlansSakuma />
+        <PricingPlansV2 />
         <CustomerVoicesSakuma />
         <FAQ />
       </main>
