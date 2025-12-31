@@ -142,7 +142,7 @@ export default function PricingPlans() {
               </div>
 
               {/* CTA Button */}
-              <a href="https://liff.line.me/2008276179-XxwM2QQD" target="_blank" rel="noopener noreferrer">
+              <a href="https://lin.ee/cTSDajPz" target="_blank" rel="noopener noreferrer">
                 <button
                   className={`w-full py-3 rounded-lg font-semibold transition-all duration-300 ${
                     plan.popular

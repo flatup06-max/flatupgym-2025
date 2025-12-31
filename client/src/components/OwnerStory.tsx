@@ -94,10 +94,8 @@ export default function OwnerStory() {
             </p>
 
             <div className="pt-4">
-              <a href="https://liff.line.me/2008276179-XxwM2QQD" target="_blank" rel="noopener noreferrer">
-                <button className="btn-cta">
-                  あいかに相談してみる →
-                </button>
+              <a href="https://lin.ee/cTSDajPz" target="_blank" rel="noopener noreferrer">
+                <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" />
               </a>
             </div>
           </motion.div>

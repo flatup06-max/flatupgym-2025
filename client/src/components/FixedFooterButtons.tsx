@@ -14,7 +14,7 @@ const buttons = [
   {
     icon: MessageCircle,
     label: 'LINE',
-    href: 'https://liff.line.me/2008276179-XxwM2QQD',
+    href: 'https://lin.ee/cTSDajPz',
     color: 'from-[#00B900] to-[#00D900]',
     hoverColor: 'hover:shadow-[0_0_20px_rgba(0,217,0,0.4)]',
   },

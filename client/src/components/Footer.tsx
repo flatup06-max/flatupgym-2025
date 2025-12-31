@@ -120,10 +120,8 @@ export default function Footer() {
           <p className="text-[#A0A0A0] mb-8 max-w-2xl mx-auto">
             世界一初心者に優しい場所で、お待ちしています。
           </p>
-          <a href="https://liff.line.me/2008276179-XxwM2QQD" target="_blank" rel="noopener noreferrer">
-            <button className="btn-cta text-lg px-12 py-4">
-              💬 LINEで無料体験を予約
-            </button>
+          <a href="https://lin.ee/cTSDajPz" target="_blank" rel="noopener noreferrer">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" />
           </a>
         </motion.div>
 

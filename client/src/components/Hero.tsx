@@ -44,7 +44,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#FAFAF8] via-[#F5E6F0] to-[#E6F5FF]">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(https://ik.imagekit.io/FLATUPGYM/batch_IMG_9600.JPG?updatedAt=1756928169552)',
+          filter: 'brightness(0.5) contrast(1.1)',
+        }}
+      />
       {/* Animated Background Elements */}
       <motion.div
         className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-[#FF006E] to-[#FF9A9E] rounded-full opacity-20 blur-3xl"
@@ -75,9 +83,9 @@ export default function Hero() {
           variants={itemVariants}
           className="mb-6 inline-block"
         >
-          <div className="px-4 py-2 bg-gradient-to-r from-[#FF006E]/10 to-[#00D9FF]/10 border border-[#FF006E]/20 rounded-full">
-            <p className="text-sm font-semibold text-[#FF006E]">
-              🌟 世界一初心者に優しい格闘技ジム
+          <div className="px-4 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full">
+            <p className="text-sm font-semibold text-white">
+              🌟 女性オーナーの安心できる格闘技ジム
             </p>
           </div>
         </motion.div>
@@ -85,25 +93,27 @@ export default function Hero() {
         {/* Main Heading */}
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 max-w-5xl"
+          className="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 max-w-5xl text-white drop-shadow-lg"
         >
           <span className="gradient-text">
             私を強くする、
           </span>
           <br />
-          <span className="text-[#1A1F3A]">
-            優しい場所。
+          <span className="text-white">
+            女性オーナーの
+            <br />
+            安心できる場所。
           </span>
         </motion.h1>
 
         {/* Subheading */}
         <motion.p
           variants={itemVariants}
-          className="text-lg md:text-2xl text-[#666666] max-w-3xl mb-8 leading-relaxed"
+          className="text-lg md:text-2xl text-white/90 max-w-3xl mb-8 leading-relaxed drop-shadow-md"
         >
-          初心者・女性・子どもが一番輝ける、最も安心で、最も楽しく、最も強くなれる格闘技ジム。
+          女性トレーナーが一寸一寸を大切に。女性専用クラス、子連れ参加OK、産後ダイエットを実績。
           <br />
-          <span className="font-semibold text-[#FF006E]">人生を変えたい人の最初の一歩を守り抜く場所。</span>
+          <span className="font-semibold text-[#FF9A9E]">女性が一番輝ける、安心で楽しい場所。</span>
         </motion.p>
 
         {/* Glowing Accent Line */}
@@ -118,25 +128,25 @@ export default function Hero() {
           variants={itemVariants}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 w-full"
         >
-          <a href="https://liff.line.me/2008276179-XxwM2QQD" target="_blank" rel="noopener noreferrer">
-            <Button className="btn-cta text-lg px-10 py-6">
-              💬 LINEで体験・相談
+          <a href="https://lin.ee/cTSDajPz" target="_blank" rel="noopener noreferrer">
+            <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" />
+          </a>
+          <a href="tel:07090353485">
+            <Button
+              variant="outline"
+              className="px-10 py-6 text-lg border-2 border-white text-white hover:bg-white/10 font-semibold"
+            >
+              📞 電話で予約
             </Button>
           </a>
-          <Button
-            variant="outline"
-            className="px-10 py-6 text-lg border-2 border-[#FF006E] text-[#FF006E] hover:bg-[#FF006E]/5 font-semibold"
-          >
-            📞 電話で予約
-          </Button>
         </motion.div>
 
         {/* Trust Indicator */}
         <motion.div
           variants={itemVariants}
-          className="text-sm text-[#666666]"
+          className="text-sm text-white/80 drop-shadow-md"
         >
-          <p className="mb-2">✨ 30秒で予約完了！見学だけでも大歓迎</p>
+          <p className="mb-2 font-semibold">✨ 30秒で予約完了！見学だけでも大歓迎</p>
           <p className="text-xs">LINE友だち 1,221人突破 | Google口コミ 高評価30件</p>
         </motion.div>
       </motion.div>

@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import OwnerStory from '@/components/OwnerStory';
+import WomensEmpowerment from '@/components/WomensEmpowerment';
 import PricingPlans from '@/components/PricingPlans';
 import CustomerVoices from '@/components/CustomerVoices';
 import FAQ from '@/components/FAQ';
@@ -26,6 +27,7 @@ export default function Home() {
       <main>
         <Hero />
         <OwnerStory />
+        <WomensEmpowerment />
         <PricingPlans />
         <CustomerVoices />
         <FAQ />
