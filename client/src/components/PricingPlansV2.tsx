@@ -46,16 +46,16 @@ const mainPlans = [
     popular: true,
   },
   {
-    name: 'メンズプラン',
-    subtitle: '高校生以上',
-    price: '9,900',
+    name: '初心者クラス',
+    subtitle: '全年代対応',
+    price: '8,800',
     period: '/月',
-    description: '本格的な格闘技を習得',
+    description: '基礎から丁寧に学べる',
     features: [
       '通い放題',
-      '格闘技全般を学べる',
-      '筋力アップ',
-      'ストレス発散に最適',
+      '格闘技の基礎を習得',
+      '体力向上',
+      '初心者大歓迎',
     ],
     cta: '今すぐ申し込む',
     color: 'bg-[#FFD700]',
@@ -233,7 +233,7 @@ export default function PricingPlansV2() {
       >
         <p className="sakuma-body text-[#1A1F3A] mb-6">
           体験クラスは <span className="font-black text-[#FF006E]">30秒で予約完了</span>。<br />
-          見学だけでも大歓迎です。
+          入会金は無料です。見学だけでも大歓迎です。
         </p>
         <a href="https://lin.ee/cTSDajPz" target="_blank" rel="noopener noreferrer">
           <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" />

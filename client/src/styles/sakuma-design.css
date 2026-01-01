@@ -67,6 +67,14 @@
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 /* ========== スクロールトリガーアニメーション ========== */
 .scroll-reveal {
   opacity: 0;
@@ -159,7 +167,7 @@
 
 .rotate-3d {
   transform-style: preserve-3d;
-  animation: rotate-3d 6s linear infinite;
+  animation: rotate-3d 8s linear infinite;
 }
 
 @keyframes rotate-3d {

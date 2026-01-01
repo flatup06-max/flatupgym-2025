@@ -15,7 +15,7 @@ const schedule = [
     day: '月',
     classes: [
       { time: '18:00-19:00', name: 'レディースキックボクシング', level: '初心者向け', color: 'bg-[#FF006E]' },
-      { time: '19:30-20:30', name: 'メンズボクシング', level: '全レベル対応', color: 'bg-[#00D9FF]' },
+      { time: '19:30-20:30', name: '初心者クラス', level: '全年代対応', color: 'bg-[#00D9FF]' },
     ],
   },
   {
@@ -23,14 +23,14 @@ const schedule = [
     classes: [
       { time: '16:00-17:00', name: 'キッズクラス', level: '小1〜中3', color: 'bg-[#FFD700]' },
       { time: '18:00-19:00', name: 'レディースキックボクシング', level: '初心者向け', color: 'bg-[#FF006E]' },
-      { time: '19:30-20:30', name: 'メンズボクシング', level: '全レベル対応', color: 'bg-[#00D9FF]' },
+      { time: '19:30-20:30', name: '初心者クラス', level: '全年代対応', color: 'bg-[#00D9FF]' },
     ],
   },
   {
     day: '水',
     classes: [
       { time: '18:00-19:00', name: 'レディースキックボクシング', level: '初心者向け', color: 'bg-[#FF006E]' },
-      { time: '19:30-20:30', name: 'メンズボクシング', level: '全レベル対応', color: 'bg-[#00D9FF]' },
+      { time: '19:30-20:30', name: '初心者クラス', level: '全年代対応', color: 'bg-[#00D9FF]' },
     ],
   },
   {
@@ -38,14 +38,14 @@ const schedule = [
     classes: [
       { time: '16:00-17:00', name: 'キッズクラス', level: '小1〜中3', color: 'bg-[#FFD700]' },
       { time: '18:00-19:00', name: 'レディースキックボクシング', level: '初心者向け', color: 'bg-[#FF006E]' },
-      { time: '19:30-20:30', name: 'メンズボクシング', level: '全レベル対応', color: 'bg-[#00D9FF]' },
+      { time: '19:30-20:30', name: '初心者クラス', level: '全年代対応', color: 'bg-[#00D9FF]' },
     ],
   },
   {
     day: '金',
     classes: [
       { time: '18:00-19:00', name: 'レディースキックボクシング', level: '初心者向け', color: 'bg-[#FF006E]' },
-      { time: '19:30-20:30', name: 'メンズボクシング', level: '全レベル対応', color: 'bg-[#00D9FF]' },
+      { time: '19:30-20:30', name: '初心者クラス', level: '全年代対応', color: 'bg-[#00D9FF]' },
     ],
   },
   {
@@ -164,8 +164,8 @@ export default function ClassScheduleSakuma() {
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-[#00D9FF] border-4 border-white rounded-none" />
               <div>
-                <p className="text-white font-black">メンズクラス</p>
-                <p className="text-white/70 text-sm">全レベル対応</p>
+                <p className="text-white font-black">初心者クラス</p>
+                <p className="text-white/70 text-sm">全年代対応</p>
               </div>
             </div>
             <div className="flex items-center gap-4">

@@ -99,6 +99,7 @@ export default function GallerySakuma() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
 
             {/* Overlay */}
@@ -139,11 +140,12 @@ export default function GallerySakuma() {
                     : 'border-[#1A1F3A] opacity-60 hover:opacity-100'
                 }`}
               >
-                <img
-                  src={image.url}
-                  alt={image.title}
-                  className="w-full h-full object-cover"
-                />
+              <img
+                src={image.url}
+                alt={image.title}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
               </motion.button>
             ))}
           </div>
