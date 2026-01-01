@@ -8,6 +8,7 @@ import ClassScheduleSakuma from '@/components/ClassScheduleSakuma';
 import TrialReservationFlow from '@/components/TrialReservationFlow';
 import AccessSakuma from '@/components/AccessSakuma';
 import CustomerVoicesSakuma from '@/components/CustomerVoicesSakuma';
+import InstagramFeed from '@/components/InstagramFeed';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import FixedFooterButtons from '@/components/FixedFooterButtons';
@@ -39,6 +40,7 @@ export default function Home() {
         <ClassScheduleSakuma />
         <TrialReservationFlow />
         <CustomerVoicesSakuma />
+        <InstagramFeed />
         <AccessSakuma />
         <FAQ />
       </main>
