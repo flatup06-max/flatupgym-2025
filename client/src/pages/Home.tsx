@@ -1,7 +1,10 @@
 import Hero from '@/components/Hero';
 import OwnerStorySakuma from '@/components/OwnerStorySakuma';
 import WomensEmpowermentSakumaV2 from '@/components/WomensEmpowermentSakumaV2';
+import GallerySakuma from '@/components/GallerySakuma';
 import PricingPlansV2 from '@/components/PricingPlansV2';
+import ClassScheduleSakuma from '@/components/ClassScheduleSakuma';
+import TrialReservationFlow from '@/components/TrialReservationFlow';
 import CustomerVoicesSakuma from '@/components/CustomerVoicesSakuma';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -28,7 +31,10 @@ export default function Home() {
         <Hero />
         <OwnerStorySakuma />
         <WomensEmpowermentSakumaV2 />
+        <GallerySakuma />
         <PricingPlansV2 />
+        <ClassScheduleSakuma />
+        <TrialReservationFlow />
         <CustomerVoicesSakuma />
         <FAQ />
       </main>
