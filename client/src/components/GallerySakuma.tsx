@@ -13,24 +13,34 @@ import { useState, useEffect } from 'react';
 
 const galleryImages = [
   {
-    url: 'https://ik.imagekit.io/FLATUPGYM/batch_IMG_9600.JPG?updatedAt=1756928169552',
+    url: 'https://ik.imagekit.io/FLATUPGYM/IMG_6883.JPG?updatedAt=1767137487657&tr=w-800,h-600,q-80,f-webp',
     title: 'キックボクシングクラス',
     description: '女性専用クラスで安心して練習',
   },
   {
-    url: 'https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2013.55.35.png?updatedAt=1738041347828',
+    url: 'https://ik.imagekit.io/FLATUPGYM/IMG_6884.JPG?updatedAt=1767137483813&tr=w-800,h-600,q-80,f-webp',
     title: 'アクティブなトレーニング',
     description: '楽しく、強くなれる環境',
   },
   {
-    url: 'https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2014.03.22.png?',
-    title: 'オーナーあいかのサポート',
-    description: '産後ダイエット成功者による指導',
+    url: 'https://ik.imagekit.io/FLATUPGYM/1.jpg?updatedAt=1751535141785&tr=w-800,h-600,q-80,f-webp',
+    title: 'ジムの雰囲気1',
+    description: '女性が安心して通える場所',
   },
   {
-    url: 'https://ik.imagekit.io/FLATUPGYM/2.jpg?updatedAt=1751535141684',
-    title: 'ジムの雰囲気',
-    description: '女性が安心して通える場所',
+    url: 'https://ik.imagekit.io/FLATUPGYM/3.jpg?updatedAt=1751535141772&tr=w-800,h-600,q-80,f-webp',
+    title: 'ジムの雰囲気2',
+    description: 'アットホームな環境',
+  },
+  {
+    url: 'https://ik.imagekit.io/FLATUPGYM/4.jpg?updatedAt=1751535141723&tr=w-800,h-600,q-80,f-webp',
+    title: 'ジムの雰囲気3',
+    description: 'プロフェッショナルな指導',
+  },
+  {
+    url: 'https://ik.imagekit.io/FLATUPGYM/2025-06-30%2023.57%E3%81%AE%E7%94%BB%E5%83%8F.JPG?updatedAt=1751295558178&tr=w-800,h-600,q-80,f-webp',
+    title: 'オーナーあいかのサポート',
+    description: '産後ダイエット成功者による指導',
   },
 ];
 
@@ -171,7 +181,7 @@ export default function GallerySakuma() {
           <p className="text-white font-black text-xl mb-6">
             無料体験クラスにお越しください！
           </p>
-          <a href="https://lin.ee/cTSDajPz" target="_blank" rel="noopener noreferrer">
+          <a href="https://liff.line.me/2008276179-XxwM2QQD" target="_blank" rel="noopener noreferrer">
             <img src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png" alt="友だち追加" height="36" />
           </a>
         </motion.div>

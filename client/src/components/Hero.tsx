@@ -45,13 +45,16 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2013.55.35.png?updatedAt=1738041347828)',
-          filter: 'brightness(0.6) contrast(1.2)',
-        }}
+      {/* Background Image - LCP Optimized */}
+      <img
+        src="https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2013.55.35.png?updatedAt=1738041347828&tr=w-1920,h-1080,q-80,f-webp"
+        srcSet="https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2013.55.35.png?updatedAt=1738041347828&tr=w-768,h-432,q-80,f-webp 768w, https://ik.imagekit.io/FLATUPGYM/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202025-01-28%2013.55.35.png?updatedAt=1738041347828&tr=w-1920,h-1080,q-80,f-webp 1920w"
+        sizes="(max-width: 768px) 100vw, 1920px"
+        alt="FLATUPGYM Hero"
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ filter: 'brightness(0.6) contrast(1.2)' }}
+        fetchPriority="high"
+        loading="eager"
       />
       {/* Animated Background Elements */}
       <motion.div
