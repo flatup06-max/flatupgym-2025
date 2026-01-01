@@ -43,7 +43,7 @@ export default function OwnerStorySakuma() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+          className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center"
         >
           {/* Left: Image */}
           <motion.div
@@ -62,6 +62,26 @@ export default function OwnerStorySakuma() {
               className="absolute -bottom-6 -right-6 w-48 h-48 bg-[#FFD700] rounded-full opacity-30 blur-3xl"
               animate={{ y: [0, 20, 0] }}
               transition={{ duration: 5, repeat: Infinity }}
+            />
+          </motion.div>
+
+          {/* Right: Image - Additional */}
+          <motion.div
+            variants={itemVariants}
+            className="relative order-2 lg:order-3"
+          >
+            <div className="relative z-10 rounded-none overflow-hidden shadow-2xl border-8 border-[#00D9FF] transform rotate-3">
+              <img
+                src="https://ik.imagekit.io/FLATUPGYM/sango1.jpeg?updatedAt=1756897186137"
+                alt="オーナーあいか - ビフォーアフター"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            {/* Decorative Elements */}
+            <motion.div
+              className="absolute -top-6 -left-6 w-48 h-48 bg-[#FF006E] rounded-full opacity-30 blur-3xl"
+              animate={{ y: [0, -20, 0] }}
+              transition={{ duration: 6, repeat: Infinity }}
             />
           </motion.div>
 
