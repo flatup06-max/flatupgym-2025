@@ -5,6 +5,7 @@ import GallerySakuma from '@/components/GallerySakuma';
 import PricingPlansV2 from '@/components/PricingPlansV2';
 import ClassScheduleSakuma from '@/components/ClassScheduleSakuma';
 import TrialReservationFlow from '@/components/TrialReservationFlow';
+import AccessSakuma from '@/components/AccessSakuma';
 import CustomerVoicesSakuma from '@/components/CustomerVoicesSakuma';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
@@ -36,6 +37,7 @@ export default function Home() {
         <ClassScheduleSakuma />
         <TrialReservationFlow />
         <CustomerVoicesSakuma />
+        <AccessSakuma />
         <FAQ />
       </main>
 
