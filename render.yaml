@@ -1,0 +1,9 @@
+services:
+  - type: static_site
+    name: flatupgym-2025
+    env: static
+    buildCommand: cd client && pnpm install --frozen-lockfile && pnpm run build
+    staticPublishPath: client/dist
+    routes:
+      - path: /*
+        destination: /index.html
